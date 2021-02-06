@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+
+  telegram:
+    build:
+      context: telegram
+    environment:
+        API_TOKEN: ${TELEGRAM_API_TOKEN}
+        SNAPSHOT_FILE: "/tmp/snapshot.jpg"
+    volumes:
+      - ./tmp:/tmp

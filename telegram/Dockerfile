@@ -1,0 +1,10 @@
+FROM python:3
+
+WORKDIR /app
+
+COPY dependencies.txt ./
+RUN pip install --no-cache-dir -r dependencies.txt
+
+COPY telegram.py ./
+
+CMD ["python", "telegram.py"]

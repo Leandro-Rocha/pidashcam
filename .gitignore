@@ -1,0 +1,4 @@
+.vscode/launch.json
+pidashcam.code-workspace
+__pycache__
+**/.env
